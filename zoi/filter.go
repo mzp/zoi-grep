@@ -11,6 +11,7 @@ func Filter(query []string, xs []Entry) []Entry {
 		for _, q := range query {
 			if !strings.Contains(v.Script, q) {
 				matched = false
+				break
 			}
 		}
 
