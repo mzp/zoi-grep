@@ -7,7 +7,7 @@ Grep for https://github.com/mzp/EagleJumpSystem
 ## Build
 
 ```
-go install command/zoi-grep
+go get github.com/mzp/zoi-grep/cmd/zoi-grep
 ```
 
 ## Usage
