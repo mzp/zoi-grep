@@ -11,7 +11,7 @@ func main() {
 	entries, err := zoi.DefaultPanels()
 
 	if err != nil {
-		fmt.Println(err)
+		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
 
@@ -19,7 +19,7 @@ func main() {
 		image, err := zoi.ReadImage(v.Path)
 
 		if err != nil {
-			fmt.Println(err)
+			fmt.Fprintln(os.Stderr, err)
 			os.Exit(1)
 		}
 
