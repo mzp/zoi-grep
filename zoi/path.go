@@ -3,13 +3,13 @@ package zoi
 import (
 	"io/ioutil"
 	"os"
-	"path"
+	"path/filepath"
 )
 
 var root = os.Getenv("ZOI_ROOT")
 
 func Resolve(name string) string {
-	return path.Join(root, name)
+	return filepath.Join(root, name)
 }
 
 func DefaultPanels() ([]Entry, error) {
