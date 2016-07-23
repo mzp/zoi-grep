@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
-	"zoi"
+
+	"github.com/mzp/zoi-grep/zoi"
 )
 
 func main() {
